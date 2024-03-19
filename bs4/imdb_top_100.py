@@ -37,13 +37,13 @@ for movie in top_hundred_movies:
     
     movies.append(data)
     
-dataframe = pd.DataFrame(movies)
+df = pd.DataFrame(movies)
 
 todays_date = date.today()
 
 file_name = 'top-hundred-movies-on-' + str(todays_date) + '.csv'
 
-dataframe.to_csv(file_name) # create a .csv file and write the data into it, the file will be overwritten if your running the program more than once on the same day.
+df.to_csv(file_name) # create a .csv file and write the data into it, the file will be overwritten if your running the program more than once on the same day.
 
    
         
